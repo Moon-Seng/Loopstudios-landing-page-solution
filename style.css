@@ -101,3 +101,59 @@ header{
 .about-text p{
     color: hsl(0, 0%, 41%);
 }
+
+
+/* Creation */
+
+.creation{
+    width: 80%;
+    height: 100vh;
+    margin: 8rem auto;
+}
+
+.creation-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.creation-text h2{
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.creation-text button{
+    padding: .5rem 4rem;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.creation-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creation-card-img{
+    width: fit-content;
+}
+
+
+.card-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.card-text h2{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 2rem 0 1rem 2rem;
+    background:linear-gradient(transparent , rgba(0, 0, 0, 0.8));
+    margin-bottom: 0;
+}
