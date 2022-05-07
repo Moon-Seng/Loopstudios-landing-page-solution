@@ -107,7 +107,7 @@ header{
 
 .creation{
     width: 80%;
-    height: 100vh;
+    height: 120vh;
     margin: 8rem auto;
 }
 
@@ -115,6 +115,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .creation-text h2{
@@ -139,6 +140,17 @@ header{
     width: fit-content;
 }
 
+.hover-effect:hover{
+    cursor: pointer;
+}
+
+.hover-effect:hover .creation-card-img{
+    opacity: .3;
+}
+
+.hover-effect:hover .card-text h2{
+    color: black;
+}
 
 .card-text{
     position:absolute;
@@ -156,4 +168,56 @@ header{
     padding: 2rem 0 1rem 2rem;
     background:linear-gradient(transparent , rgba(0, 0, 0, 0.8));
     margin-bottom: 0;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    color: white;
+    padding: 3rem 4rem;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-footer, .bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-footer{
+    margin-bottom: 2rem;
+}
+
+.social{
+    display: flex;
+}
+
+.social-item{
+    font-size: 30px;
+    margin-right: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.social-item:hover{
+    cursor:pointer;
+    border-bottom: 2px solid white;
+    opacity: 1;
+}
+
+.footer-nav{
+    display: flex;
+}
+
+.footer-nav-item{
+    margin-right: 4rem;
+    padding-bottom: .5rem;
+}
+
+.footer-nav-item:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
 }
