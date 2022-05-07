@@ -13,6 +13,10 @@
 
 /* Base */
 
+.hidden{
+    display: none !important;
+}
+
 /* End Base */
 
 
@@ -49,10 +53,17 @@ header{
     margin: 2rem 1rem;
     padding-bottom: .5rem;
     cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .nav-item:hover{
     border-bottom: 2px solid white;
+}
+
+.menu i {
+    color: white;
+    font-size: 24px;
 }
 
 .header-card{
@@ -70,6 +81,7 @@ header{
     text-transform: uppercase;
     line-height: 1;
 }
+
 
 /* About */
 
@@ -124,7 +136,7 @@ header{
     text-transform: uppercase;
 }
 
-.creation-text button{
+.creation-text button , .mobile-button{
     padding: .5rem 4rem;
     background-color: white;
     text-transform: uppercase;
@@ -214,10 +226,150 @@ footer{
 
 .footer-nav-item{
     margin-right: 4rem;
+    margin-bottom: 0;
     padding-bottom: .5rem;
 }
 
 .footer-nav-item:hover{
     cursor: pointer;
     border-bottom: 2px solid white;
+}
+
+.copy-right p{
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 55%);
+}
+
+@media screen and (max-width : 475px) {
+    /* Header */
+    .header{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .main-nav{
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    .nav-items{
+        padding-top: 10rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin: 2rem 4rem;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .logo{
+        z-index: 1000;
+    }
+
+    .menu{
+        z-index: 1000;
+    }
+
+
+    .header-card{
+        width: 95%;
+        margin: auto;
+    }
+
+    .header-card h1{
+        font-size: 42px;
+    }
+
+    /* About */
+
+    .about{
+        width: 90%;
+        height: 70vh;
+    }
+
+    .about-img img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .about-text{
+        position: static;
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text h2{
+        font-size: 32px;
+    }
+
+    .about-text p{
+        padding: 0 1rem;
+    }
+
+    /* Creation */
+    .creation{
+        width: 90%;
+        margin: 4rem auto;
+        height: fit-content;
+    }
+
+    .mobile-button{
+        margin: auto;
+    }
+
+    .creation-text{
+        justify-content: center;
+    }
+
+    .creation-text h2{
+        font-size: 30px;
+    }
+
+    .creation-card-img img{
+        width: 100%;
+    }
+
+    .card-text{
+        padding: 0;
+    }
+
+    /* Footer */
+    footer{
+        height: fit-content;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .top-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img{
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .bottom-footer{
+        flex-direction: column;
+    }
+
+    .footer-nav-item{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+    }
+
 }
